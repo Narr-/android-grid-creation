@@ -14,6 +14,6 @@ public class CreateGridActivity extends Activity {
 
 		setContentView(R.layout.create_grid_activity_layout);
 
-		Log.d(TAG, "onCreate..!!");
+		Log.d(TAG, "onCreate()..!!");
 	}
 }
