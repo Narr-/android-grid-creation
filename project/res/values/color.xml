@@ -1,0 +1,8 @@
+<resources>
+
+    <color name="cell_edit_mode_pressed_fill">#8ee5ee</color>
+    <color name="cell_edit_mode_pressed_stroke">#0086a9</color>
+    <color name="cell_edit_mode_divide_fill">#f8f8f8</color>
+    <color name="cell_edit_mode_divide_stroke">#c8c8c8</color>
+
+</resources>

@@ -1,9 +1,78 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white" >
+    <!-- android:background="#FFFFFFAA" -->
 
-    <!-- android:background="#FFFFFFAA" -->
+    <RadioGroup
+        android:id="@+id/rg_cell_edit_mode_change_btns"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_merge"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:background="@xml/rg_cell_edit_mode_change_btns_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/merge"
+            android:textColor="@xml/rg_cell_edit_mode_change_btns_txt_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_divide"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:background="@xml/rg_cell_edit_mode_change_btns_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/divide"
+            android:textColor="@xml/rg_cell_edit_mode_change_btns_txt_selector" />
+    </RadioGroup>
+
+    <com.narr.creategrid.GridDrawView
+        android:id="@+id/gdv"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/white" >
+    </com.narr.creategrid.GridDrawView>
+    <!-- 300 : 400 = 6 : 8 = NUM_OF_COLUMN : NUM_OF_ROW -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@xml/btn_grid_creation_selector"
+            android:text="@string/cancel"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@xml/btn_grid_creation_selector"
+            android:text="@string/save"
+            android:textSize="20sp" />
+    </LinearLayout>
 
 </RelativeLayout>
