@@ -1,4 +1,4 @@
 android-grid-creation
 =====================
 
-create grid by canvas
+Create a grid by Canvas
